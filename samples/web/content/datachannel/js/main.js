@@ -51,9 +51,9 @@ function createConnection() {
     pcConstraint = {optional: [{RtpDataChannels: true}]};
     if (!rtpSelect.checked) {
       // Use rtp data channels for chrome versions older than M31.
-      trace('Using RTP based Data Channels,' +
+      trace('Using RTP based Data Channels, ' +
             'as you are on an older version than M31.');
-      alert('Reverting to RTP based data channels,' +
+      alert('Reverting to RTP based data channels, ' +
             'as you are on an older version than M31.');
       rtpSelect.checked = true;
     }
